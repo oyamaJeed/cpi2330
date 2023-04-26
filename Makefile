@@ -1,4 +1,4 @@
-TARGET := thread1
+TARGET := display
 SRC := $(TARGET).c
 OBJ := $(TARGET).o
 
