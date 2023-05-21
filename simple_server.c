@@ -70,3 +70,12 @@ int main(int argc, char *argv[])
       fprintf(stderr,"Failed to send a message.\n");
       exit(1);
     }
+    
+    if (shutdown(ClientSessionID,2)==-1){
+      fprintf(stderr,"Failed to shutdown.\n");
+      exit(1);
+    }
+    close(ClientSessionID);
+  }
+}
+
